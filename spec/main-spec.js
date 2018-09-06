@@ -9,6 +9,13 @@ describe('generateAnagrams()', () => {
         expect(result).toEqual(expected)
     });
 
+    it('should return [a] when user inputs a', function() {
+        let input = 'a';
+        let result = main(input);
+        let expected = ['a'];
+        expect(result).toEqual(expected)
+    });
+
 
 });
 
