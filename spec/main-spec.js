@@ -16,6 +16,13 @@ describe('generateAnagrams()', () => {
         expect(result).toEqual(expected)
     });
 
+    it('should return array of length 2 when user inputs string with length 2', function() {
+        let input = 'ab';
+        let result = main(input);
+        let expected = ['ab', 'ba'];
+        expect(result).toEqual(expected)
+    });
+
 
 });
 
