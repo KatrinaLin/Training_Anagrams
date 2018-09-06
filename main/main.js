@@ -1,8 +1,4 @@
 module.exports = function generateAnagrams(input) {
-    if (input.length === 2) {
-        return [input, swap(input.split(''), 0, 1).join('')];
-    }
-
     if (input.length === 0) {
         return [];
     }
