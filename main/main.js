@@ -1,9 +1,5 @@
 module.exports = function generateAnagrams(input) {
-    if (input.length === 0) {
-        return [];
-    }
-
-    return permutation(input.split(''), 0, []);
+    return input.length === 0 ? [] : permutation(input.split(''), 0, []);
 };
 
 function permutation(arr, index, result) {
