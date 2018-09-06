@@ -23,6 +23,12 @@ describe('generateAnagrams()', () => {
         expect(result).toEqual(expected)
     });
 
+    it('should return array of length 6 when user inputs string with length 3 with no duplicate letters', function() {
+        let input = 'abc';
+        let result = main(input).length;
+        let expected = 6;
+        expect(result).toEqual(expected)
+    });
 
 });
 
