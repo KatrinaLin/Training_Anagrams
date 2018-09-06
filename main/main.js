@@ -17,7 +17,6 @@ module.exports = function generateAnagrams(input) {
 function permutation(arr, index, result) {
     if (index === arr.length) {
         result.push(arr.join(''));
-        console.log(result);
         return result;
     }
 
