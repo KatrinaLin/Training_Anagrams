@@ -3,10 +3,6 @@ module.exports = function generateAnagrams(input) {
         return [input, swap(input.split(''), 0, 1).join('')];
     }
 
-    if (input === 'a') {
-        return ['a'];
-    }
-
     if (input.length === 0) {
         return [];
     }
